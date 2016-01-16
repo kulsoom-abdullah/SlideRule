@@ -35,5 +35,13 @@ def jaccard_mod(x, y):
 There are 2 ways to use it:
 
 * Use a sigmoid factor to normalize the jaccard value for when you have a wide variety of set lengths you are calculating distances for. (This is commented out.)  
+```python
+def sig_factor(x, y):
+    # factor to increase similiarity for more IP addresses
+    alpha = 14
+    minIPset = min(len(x), len(y))
+    return 1 / (1 + math.exp(alpha - minIPset))
+```    
+
 * The other method I had used for when comparing sets of a small to a comparible large set, for example, 100 elements to 1000, if that 100 was contained in the 1000, then I wanted the distance to be a value of 1.  This is how the factor of dividing by the minimum length of the two sets being compared was decided on.
 
