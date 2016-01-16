@@ -9,6 +9,17 @@ Using python profile to find out the bottleneck, I found it was the set intersec
 
 ```python
 def intersect(x, y):
+    incommon = 0.0
+    if len(x) < len(y):
+        for ip in x:
+            if ip in y:
+                incommon += 1
+    if len(y) <= len(x):
+        for ip in y:
+            if ip in x:
+                incommon += 1
+    intersection = incommon
+    return intersection
 ```
 
 
