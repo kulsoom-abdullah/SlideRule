@@ -1,9 +1,11 @@
-This python code has functions needed to calculate the Jaccard index (or similiarity)
+# Jaccard Distance functions and modifications
+
+This python code has functions needed to calculate the [Jaccard index] (https://en.wikipedia.org/wiki/Jaccard_index) (or similiarity)
 which is used as a measure of distance.
-https://en.wikipedia.org/wiki/Jaccard_index
+
 
 Generally, the set functions in Python, such as intersection and union run quickly, but I had very long running times.
-Using python profile to find out the bottleneck, I found it was the set operation, specifically for when I had a very large set of items in the 400,000 and above length, being compared.  Using this code with a modified intersection method sped things up considerably.
+Using python profile to find out the bottleneck, I found it was the set intersection operation, specifically for when I had a very large set of items in the 400,000 and above length, being compared.  Using this code with a modified intersection method sped things up considerably.
 
 ```python
 def intersect(x, y):
