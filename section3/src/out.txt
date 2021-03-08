@@ -1,0 +1,6 @@
+subdirs: ['/home/workspace/TestVolumes/Study1/34909-T1prereg-84610', '/home/workspace/TestVolumes/Study1/13_HCropVolume', '/home/workspace/TestVolumes/Study1/st_1.3.6.1.4.1.14519.5.2.1.4429.7055.290332099546120305394775536058', '/home/workspace/TestVolumes/Study1/12-T1post-05670', '/home/workspace/TestVolumes/Study1/st_1.3.6.1.4.1.14519.5.2.1.4429.7055.812059520220877654137991744184', '/home/workspace/TestVolumes/Study1/36459-FLAIRreg-76244']
+Looking for series to run inference on in directory /home/workspace/TestVolumes/Study1/st_1.3.6.1.4.1.14519.5.2.1.4429.7055.812059520220877654137991744184...
+in get_series_for_inf, w/ path=/home/workspace/TestVolumes/Study1/st_1.3.6.1.4.1.14519.5.2.1.4429.7055.812059520220877654137991744184
+2
+Error: can not figure out what series to run inference on
+in load dicom vol with list []
